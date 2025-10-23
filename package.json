@@ -2,7 +2,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://franco0307.github.io/smart-park-management",
+  "homepage": "https://franco0307.github.io/smart-campus-management-system",
   "private": true,
   "dependencies": {
     "@react-pdf/renderer": "^4.3.1",

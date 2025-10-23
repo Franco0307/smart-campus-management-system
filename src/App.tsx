@@ -26,13 +26,13 @@ function App() {
         myRoutes[0].children[0].index = true;
         // ✅ 添加 basename 配置
         const router = createBrowserRouter(myRoutes, {
-          basename: "/smart-park-management"
+          basename: "/smart-campus-management-system"
         })
         setRouter(router);
       }else{
         // ✅ 添加 basename 配置
         const router = createBrowserRouter(routes, {
-          basename: "/smart-park-management"
+          basename: "/smart-campus-management-system"
         })
         setRouter(router);
       }

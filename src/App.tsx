@@ -8,11 +8,13 @@ import { getMenu } from "./api/users";
 import { useDispatch } from 'react-redux';
 import { setMenu } from "./store/login/authSlice";
 import { useSelector } from "react-redux";
+
 function App() {
   console.log(process.env.REACT_APP_API_URL)
   const { token } = useSelector((state: any) => state.authSlice);
   const [routerss, setRouter] = useState<any>(null);
   const dispatch = useDispatch();
+  
   useEffect(() => {
     async function loadData() {
       const { data } = await getMenu();
@@ -22,15 +24,22 @@ function App() {
         const myRoutes = [...routes];
         myRoutes[0].children = routers;
         myRoutes[0].children[0].index = true;
-        const router = createBrowserRouter(myRoutes)
+        // ✅ 添加 basename 配置
+        const router = createBrowserRouter(myRoutes, {
+          basename: "/smart-park-management"
+        })
         setRouter(router);
       }else{
-        const router = createBrowserRouter(routes)
+        // ✅ 添加 basename 配置
+        const router = createBrowserRouter(routes, {
+          basename: "/smart-park-management"
+        })
         setRouter(router);
       }
     }
     loadData()
   },[token])
+  
   if (routerss) {
     return (
       <div className="App">
@@ -42,8 +51,6 @@ function App() {
   } else {
     return <Spin></Spin>
   }
-
-
 }
 
 export default App;

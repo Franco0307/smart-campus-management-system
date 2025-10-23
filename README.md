@@ -1,46 +1,94 @@
-# Getting Started with Create React App
+# 🏢 Smart Park Management Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive intelligent park management system built with React, TypeScript, and Ant Design.
 
-## Available Scripts
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9+-blue.svg)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-18.0+-61dafb.svg)](https://reactjs.org/)
+[![Ant Design](https://img.shields.io/badge/Ant%20Design-5.x-1890ff.svg)](https://ant.design/)
 
-In the project directory, you can run:
+## 📖 Introduction
 
-### `npm start`
+A smart park leverages modern information technology to manage and optimize park operations. This platform integrates IoT, big data, and AI technologies to improve management efficiency, save energy, enhance security, and improve environmental quality.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Key Capabilities:**
+- 💡 Intelligent lighting and energy management
+- 🔒 Smart security monitoring
+- 📱 Mobile-integrated services
+- 📊 Real-time data visualization
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- **Dashboard** - Real-time metrics and analytics
+- **Tenant Management** - Complete lifecycle management
+- **Property Management** - Buildings, rooms, and vehicles
+- **Repair Management** - Work order tracking
+- **Finance Management** - Contracts and billing
+- **Investment Management** - Lead tracking
+- **Operation Management** - Content publishing
+- **Equipment Management** - Facility monitoring
+- **Energy Consumption** - Usage tracking and analytics
+- **System Settings** - User and permission management
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Technology Stack
+```
+React 18 + Redux Toolkit + React Router v6.4 + TypeScript + Ant Design + ECharts + Mock.js
+```
 
-### `npm run build`
+**Core Technologies:**
+- **React 18** - UI framework
+- **TypeScript** - Type safety
+- **Ant Design 5.x** - UI components
+- **Redux Toolkit** - State management
+- **React Router v6** - Routing
+- **ECharts** - Data visualization
+- **SCSS** - Styling
+- **Mock.js** - Mock data
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Quick Start
+```bash
+# Clone repository
+git clone https://github.com/Franco0307/smart-park-management.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Install dependencies
+cd smart-park-management
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Start development server
+npm start
+```
 
-### `npm run eject`
+## 🔑 Demo Accounts
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Role | Username | Password |
+|------|----------|----------|
+| Admin | `admin` | `admin123123` |
+| Manager | `manager` | `manager123123` |
+| User | `user` | `user123123` |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📁 Project Structure
+```
+src/
+├── api/          # API services
+├── assets/       # Static resources
+├── components/   # Reusable components
+├── hooks/        # Custom hooks
+├── pages/        # Page components
+├── router/       # Routing
+├── store/        # Redux store
+├── utils/        # Utilities
+├── mock/         # Mock data
+└── App.tsx       # Root component
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🛠️ Build
+```bash
+# Production build
+npm run build
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 👨‍💻 Author
 
-## Learn More
+**Franco0307**
+- GitHub: [@Franco0307](https://github.com/Franco0307)
+- Email: z.yang110817@gmail.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
